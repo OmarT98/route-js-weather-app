@@ -1,0 +1,40 @@
+#home {
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  background-color: #262936;
+  border: solid #3e4358;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #fff;
+  background-color: #262936;
+  border-color: #262936;
+}
+
+input::placeholder {
+  color: #fff !important;
+}
+
+.bg-main-color {
+  background-color: rgba(30, 32, 43);
+}
+
+.bg-sec-color {
+  background-color: #262936;
+}
+
+.text-color {
+  color: rgb(15, 168, 219);
+}

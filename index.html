@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 5 JS | Weather API</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- ! ========== FONT AWESOME ========== -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- ! ========== BOOTSTRAP ========== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- ! ========== MAIN CSS ========== -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <section id="home" class="pt-4 min-vh-100">
+        <div class="container py-5">
+            <input type="text" name="searchLocation" id="searchLocationInput" placeholder="Location . . ."
+                class="w-100 mx-auto form-control rounded-5 text-white" />
+        </div>
+
+        <div class="row mx-3">
+            <!-- ^ Today Sec.-->
+            <div class="card col-md-4 bg-sec-color rounded-4 p-0 overflow-hidden my-1">
+                <div class="item d-flex justify-content-between py-2 px-3 bg-main-color text-white" id="todayDate">
+                    <p id="currDayName" class="my-auto"></p>
+                    <span>
+                        <span id="currdayNumber" class="my-auto"></span>
+                        <span id="currMonth" class="my-auto"></span>
+                    </span>
+                </div>
+                <div class="item px-3 py-3 pt-5 text-white" id="today">
+                    <p id="currLocation" class="fs-4"></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fs-1 fw-bolder">
+                            <span id="currTemp"></span>
+                            <span><sup>o</sup> C</span>
+                        </span>
+                        <img id="currConditionImg" src="" alt="Weather Image" />
+                    </div>
+                    <p id="currConditionText" class="fs-6 text-color"></p>
+                </div>
+                <div class="item d-flex text-light p-3">
+                    <div class="d-flex me-3">
+                        <img src="images/icon-umberella@2x.png" class="footer-icons me-2" alt="weather Image" />
+                        <p id="currHumidity"></p>
+                    </div>
+                    <div class="d-flex me-3">
+                        <img src="images/icon-wind@2x.png" class="footer-icons mx-2" alt="weather Image" />
+                        <p id="currWind"></p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="images/icon-compass@2x.png" class="footer-icons mx-2" alt="weather Image" />
+                        <p id="currWindDirection"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ^ Tomorrow Sec. -->
+            <div class="card col-md-4 bg-sec-color rounded-4 p-0 overflow-hidden my-1">
+                <div class="item d-flex justify-content-center py-2 px-3 bg-main-color text-white">
+                    <p id="nextDayName" class="my-auto"></p>
+                </div>
+                <div class="item text-white p-3 text-center pt-5">
+                    <img id="nextConditionImg" src="" alt="weather img" />
+                    <h3>
+                        <span id="nextMaxTemp"></span>
+                        <span><sup>o</sup> C</span>
+                    </h3>
+                    <h5 class="text">
+                        <span id="nextMinTemp" class="nextMinTemp text-white-50"></span>
+                        <span class="text-white-50"><sup>o</sup> C</span>
+                    </h5>
+                    <p id="nextConditionText" class="nextConditionText fs-6 text-color"></p>
+                </div>
+            </div>
+
+            <!-- ^ After Tomorrow Sec. -->
+            <div class="card col-md-4 bg-sec-color rounded-4 p-0 overflow-hidden my-1">
+                <div class="item d-flex justify-content-center py-2 px-3 bg-main-color text-white">
+                    <p id="afterNextDayName" class="after-nextDayName my-auto"></p>
+                </div>
+                <div class="item text-white p-3 text-center pt-5">
+                    <img id="afterNextConditionImg" src="" alt="weather image" />
+                    <h3>
+                        <span id="afterNextMaxTemp"></span>
+                        <span><sup>o</sup> C</span>
+                    </h3>
+                    <h5 class="text">
+                        <span id="afterNextMinTemp" class="after-nextMinTemp text-white-50"></span>
+                        <span class="text-white-50"><sup>o</sup> C</span>
+                    </h5>
+                    <p id="afterNextConditionText" class="after-nextConditionText fs-6 text-color"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
